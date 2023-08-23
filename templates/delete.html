@@ -1,0 +1,7 @@
+<h2>Are you delete {{work.title}} work?</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Delete">
+
+</form>
